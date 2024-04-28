@@ -6,10 +6,16 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Friend {
+@Model
+class Friend {
     let name: String
     let birthday: Date
     
+    init(name: String, birthday: Date) {
+        self.name = name
+        self.birthday = birthday
+    }
     
 }
